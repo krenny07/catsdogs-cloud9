@@ -33,7 +33,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835-assignment1
-        IMAGE_TAG: Cats_v1.0
+        IMAGE_TAG: cat_simage
       run: |
         cd /home/runner/work/catsdogs-cloud9/catsdogs-cloud9/cats
         ls -ltra
@@ -48,7 +48,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: clo835-assignment1
-        IMAGE_TAG: Dogs_v1.0
+        IMAGE_TAG: ${{ github.sha }}
       run: |
         cd /home/runner/work/catsdogs-cloud9/catsdogs-cloud9/dogs
         ls -ltra
