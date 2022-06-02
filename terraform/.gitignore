@@ -1,0 +1,6 @@
+.terraform
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.pub
+Assignment1-dev
