@@ -32,10 +32,10 @@ jobs:
     - name: Build, tag, and push Cats image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: clo835-assignment1
-        IMAGE_TAG: cats_image
+        ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
+        IMAGE_TAG: latest
       run: |
-        cd /home/runner/work/catsdogs-cloud9/catsdogs-cloud9/cats
+        cd /cats
         ls -ltra
         # Build a docker container and push it to ECR 
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -47,10 +47,10 @@ jobs:
     - name: Build, tag, and push Dogs image to Amazon ECR
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: clo835-assignment1
-        IMAGE_TAG: dogs_image
+        ECR_REPOSITORY: ${{ secrets.REPO_NAME }}
+        IMAGE_TAG: latest
       run: |
-        cd /home/runner/work/catsdogs-cloud9/catsdogs-cloud9/dogs
+        cd /dogs
         ls -ltra
         # Build a docker container and push it to ECR 
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
