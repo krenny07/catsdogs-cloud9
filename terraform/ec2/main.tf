@@ -140,7 +140,7 @@ resource "aws_ecr_repository" "clo835-assignment1" {
   name = "clo835-assignment1"
   tags = merge(local.default_tags,
     {
-      "Name" = "${local.name_prefix}-clo835-assignment1"
+      "Name" = "${local.name_prefix}-ecr-repository"
     }
   )
-}
+} 
