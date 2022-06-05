@@ -1,3 +1,5 @@
+[![Deploy to ECR](https://github.com/krenny07/catsdogs-cloud9/actions/workflows/aws.yml/badge.svg)](https://github.com/krenny07/catsdogs-cloud9/actions/workflows/aws.yml)
+
 Pre-requisites: 
 
 1.	Generate SSH key with filename Assignment1-dev
