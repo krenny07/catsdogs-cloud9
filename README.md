@@ -2,10 +2,7 @@ Pre-requisites:
 
 1.	Generate SSH key with filename Assignment1-dev
 2.	Update the following repository secrets: 
-AWS_ACCESS_KEY_ID
-AWS_SECRET_ACCESS_KEY
-AWS_SESSION_TOKEN
-Repo_Name = clo835-assignment1
+AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_SESSION_TOKEN, and Repo_Name = clo835-assignment1
 
 Deployment steps:
 
